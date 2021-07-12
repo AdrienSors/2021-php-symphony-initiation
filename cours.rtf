@@ -12,11 +12,17 @@ git init : initialise un dépôt (repository) git
 git config --global user.email "adresse@email.com"
 git config --global user.name "Prénom NOM"
 git config --list -appuyer sur Q pour quitter)
+
+### Ajout et suppression d'un fichier dans le "tracking" de git
 git add <noms des fichiers> : on envoie les fichiers dans l'index en attente de commit
+git rm --cached <file_name> : retire le fichier du "tracking" de git sans le supprimer du disque.
+
 git status: donnes des infos sur le dépôt
 git commit -m "message de commit" : créer une version du dépôt avec un message
 git log : afficher l'historique des commits
 git remote add <nom de la branche> <lien vers le dépôt> : créer un lien entre le dépôt local et le dépôt distant
+
+### Envoi des changements vers le server git.
 git push <remote> <nom de la branche> : envoie le contenu du dépôt local sur le dépôt en ligne
 git push origin master : envoie sur la branche principale en ligne
 
